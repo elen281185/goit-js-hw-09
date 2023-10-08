@@ -10,7 +10,7 @@ function onSubmitForm(e) {
     Notiflix.Notify.warning(`Please enter a positive number`);
   }
   else{
-    for(i = 0; i < amount.value; i++){
+    for(let i = 0; i < amount.value; i++){
       let position = i + 1;
       const delays = Number(delay.value) + step.value * i;
    
