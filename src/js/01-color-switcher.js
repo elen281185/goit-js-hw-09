@@ -13,6 +13,7 @@ let timerId = null;
     timerId = setInterval(() => {
         body.style.backgroundColor = getRandomHexColor();     
     }, 1000); 
+    startBtn.toggleAttribute('disabled');
   });
 
   stopBtn.addEventListener("click", () => {
